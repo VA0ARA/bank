@@ -9,7 +9,7 @@
         <tr>
             <td>@la.Name</td>
             <td>
-                <form asp-controller="Home" asp-action="Translate" asp-route-id="@la.Id" method="post">
+                <form asp-controller="Home" asp-action="SelectTranslate" asp-route-id="@la.Id" method="get">
                     <input type="submit" class="btn-sm btn-danger" value="ورود">
                 </form>
             </td>

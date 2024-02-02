@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double TotalCredit { get; set; }
+        public double  TotalCredit { get; set; }
         public List<BankAccount> BankAccounts { get; set; }
 
         public User (int Id , string Name, double TotalCredit)

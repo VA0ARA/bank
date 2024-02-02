@@ -11,8 +11,9 @@ namespace Bank.Services
         {
             userMabda.TotalCredit = bank1 + bank2;
         }
-        public void kasrazHesab(double mablagh, long nmada, long nmaghsad)
+        public void kasrazHesab(double  mablagh, long nmada, long nmaghsad)
         {
+            Data.Data.init();
             var bankfe = userMabda.BankAccounts.Where(u => u.NumberAccount == nmada).FirstOrDefault();
             if (bankfe.Cerdit > mablagh)
             {
